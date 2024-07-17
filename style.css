@@ -1,0 +1,170 @@
+#team-name {
+  width: 200px;
+  margin: 40px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: relative;
+}
+
+#team-introduce-text {
+  float: right;
+  float: bottom;
+  padding: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+#logo {
+  position: relative;
+  width: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.rules {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: relative;
+  margin-top: 5%;
+}
+
+#ruletitle {
+  padding: 100px 100px;
+  margin-left: 15%;
+}
+
+#rulecontent {
+  padding: 20px 100px;
+  margin: auto;
+  margin-left: 2%;
+}
+
+/* 로고모양 a태그로 변경에 따른 스타일 변경 */
+#team-name a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* 깃헙,노션 스타일 */
+#image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+/* 헤더 부분 팀이름 스타일 */
+#header-team-name {
+  display: inline; /* h2 요소를 인라인 요소로 변경 */
+  color: #2c3e50;
+  border-bottom: solid black;
+}
+
+/* 팀규칙의 요소들 */
+
+#rule {
+  margin-top: 5px;
+}
+
+#rules-image {
+  position: relative;
+  width: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+/* team-introduce */
+.team-introduce {
+  background-color: white;
+  position: relative;
+  margin-top: 5%;
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+}
+
+#team {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  margin-right: 2%;
+  cursor: pointer;
+}
+
+.team-introduce-title {
+  display: flex;
+  justify-content: center;
+}
+
+.guest-book {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: relative;
+  margin-top: 5%;
+}
+
+/* 모달 스타일 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* font */
+body {
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
