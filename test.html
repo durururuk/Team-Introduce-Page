@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>const membersInfo = {
+        team1: {
+          name: "",
+          mbti: "",
+          comment: "",
+          blog: "",
+          photo: "",
+          pro: "",
+          pstyle: "",
+          cstyle: ""
+        },
+        team2: {
+          name: "신승재",
+          mbti: "INFP",
+          comment: "잘 부탁드립니다..!",
+          blog: "durururuk.tistory.com",
+          photo: "https://images.chosun.com/resizer/PeHDAksF_KhyIrmk5Qm2vkWTCjU=/464x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/B4NDUDUIFKMU4RDHCV2WP2IOMM.jpg",
+          pro: "무엇을 검색해야 원하는 것을 찾을 수 있을지 구글링을 잘 한다고 생각합니다",
+          pstyle: "문제가 생겼을 때 잡히는대로 수정하지 않고 이유를 알고 해결하고싶습니다.",
+          cstyle: "제가 짠 코드를 누가 보더라도 코드를 이해할 수 있게 짜고싶습니다."
+  
+        },
+        team3: {
+          name: "",
+          mbti: "",
+          comment: "",
+          blog: "",
+          photo: "",
+          pro: "",
+          pstyle: "",
+          cstyle: ""
+        },
+        team4: {
+          name: "",
+          mbti: "",
+          comment: "",
+          blog: "",
+          photo: "",
+          pro: "",
+          pstyle: "",
+          cstyle: ""
+        },
+      };
+      
+    const imgElement = e.target.closest("li").querySelector("img");
+    const imgSrc = imgElement.getAttribute("src");
+    const member = membersImage[imgSrc];
+
+    const favDialog = document.getElementById("favDialog");
+    const number = document.getElementById("number");
+    const modal = document.getElementById("myModal");
+    const modalText = document.getElementById("modal-text");
+
+      
+      </script>
+</head>
+<link rel="stylesheet" href="style.css" />
+
+<body>
+    <!-- `
+    name: ${membersInfo[member].name},
+    mbti: ${membersInfo[member].name},
+    comment: ${membersInfo[member].comment},
+    blog: ${membersInfo[member].blog},
+    photo: ${membersInfo[member].photo},
+    pro: ${membersInfo[member].pro},
+    pstyle: ${membersInfo[member].pstyle},
+    cstyle: ${membersInfo[member].cstyle},
+     ` -->
+     <div class="innerModal">
+        <div class="top-content">
+            <div >
+                <img id=mphoto
+                    src=${membersInfo[member].photo}>
+            </div>
+
+            <div id=simpleProfile>
+                <p>이름 : ${membersInfo[member].name}</p>
+                <p>MBTI : ${membersInfo[member].mbti}</p>
+                <p>코멘트 : ${membersInfo[member].comment}</p>
+                <p>블로그 주소 : ${membersInfo[member].blog}</p>
+            </div>
+        </div>
+        <div id=detailedProfile>
+            <p>객관적으로 살펴본 자신의 장점 : ${membersInfo[member].pro} </p>
+            <p>자신의 스타일 : ${membersInfo[member].pstyle} </p>
+            <p>협업 스타일 소개 : ${membersInfo[member].cstyle} </p>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="kr" class="font-size">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team 언저리 소개 페이지</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body style="background-color: #f0eada">
-    <div id="team-name"><a href="/Team-Introduce-Page/index.html">👀언저리</a></div>
 
-    <!-- header -->
-    <div class="header">
-      <div id="logo">
-        <img width="100%" src="static/images/logo.webp" />
-      </div>
-      <div id="team-introduce-text">
-        <h2>우리팀은...</h2>
-        아직 개발자는 아니지만 개발자가 되고 싶은 사람들이 모여
-        <h2 id="header-team-name">언저리</h2>
-        입니다. 우리팀은 서로 존중하고 질문하고 답해주며 팀원 전체의 성장을 목표로 합니다.
-      </div>
-      <div style="margin-top: 5px">
-        <a href="https://github.com/durururuk/Team-Introduce-Page"><img src="static//images/githubImage.png" id="image" /></a>
-        <a href="/Team-Introduce-Page/index.html"><img src="static//images/notion.png" id="image" /></a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team 언저리 소개 페이지</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body style="background-color: #f0eada">
+  <div id="team-name"><a href="/Team-Introduce-Page/index.html">👀언저리</a></div>
+
+  <!-- header -->
+  <div class="header">
+    <div id="logo">
+      <img width="100%" src="static/images/logo.webp" />
     </div>
+    <div id="team-introduce-text">
+      <h2>우리팀은...</h2>
+      아직 개발자는 아니지만 개발자가 되고 싶은 사람들이 모여
+      <h2 id="header-team-name">언저리</h2>
+      입니다. 우리팀은 서로 존중하고 질문하고 답해주며 팀원 전체의 성장을 목표로 합니다.
+    </div>
+    <div style="margin-top: 5px">
+      <a href="https://github.com/durururuk/Team-Introduce-Page"><img src="static//images/githubImage.png"
+          id="image" /></a>
+      <a href="/Team-Introduce-Page/index.html"><img src="static//images/notion.png" id="image" /></a>
+    </div>
+  </div>
 
-    <!-- 팀 규칙들 -->
-    <div class="rules">
-      <div id="ruletitle">
-        <h1>팀 규칙</h1>
-      </div>
-      <ul id="rulecontent">
-        <li id="rule">ZEP 09:00까지 접속(22조 테이블)</li>
-        <li id="rule">점심시간 12:00 ~ 13:00</li>
-        <li id="rule">스파르타코딩클럽 강의 듣기 09:00 ~ 12:00</li>
-        <li id="rule">저녁시간 18:00 ~ 19:00</li>
-        <li id="rule">21:00 ~ 23:59 퇴실처리 !</li>
-        <li id="rule">모르는 거 생기면 서로서로 질문하고 답해주기 !</li>
-        <li id="rule">답답해도 화내지 않기 !</li>
-        <li id="rule">자리 비울 때 (10분이내 복귀 제외) 팀원들에게 꼭 ! ! ! 말하기 !</li>
+  <!-- 팀 규칙들 -->
+  <div class="rules">
+    <div id="ruletitle">
+      <h1>팀 규칙</h1>
+    </div>
+    <ul id="rulecontent">
+      <li id="rule">ZEP 09:00까지 접속(22조 테이블)</li>
+      <li id="rule">점심시간 12:00 ~ 13:00</li>
+      <li id="rule">스파르타코딩클럽 강의 듣기 09:00 ~ 12:00</li>
+      <li id="rule">저녁시간 18:00 ~ 19:00</li>
+      <li id="rule">21:00 ~ 23:59 퇴실처리 !</li>
+      <li id="rule">모르는 거 생기면 서로서로 질문하고 답해주기 !</li>
+      <li id="rule">답답해도 화내지 않기 !</li>
+      <li id="rule">자리 비울 때 (10분이내 복귀 제외) 팀원들에게 꼭 ! ! ! 말하기 !</li>
+    </ul>
+    <img src="./static/images/rules.jpg" id="rules-image" />
+  </div>
+
+  <!-- 팀소개 -->
+  <div class="team-introduce">
+    <div>
+      <h1 class="team-introduce-title">우리 팀을 소개합니다 !</h1>
+      <ul class="teams" onclick="handleMemberProfileClick(event)">
+        <li id="team"><img src="./static/images/team1.jpg" /></li>
+        <li id="team"><img src="./static/images/team2.jpg" /></li>
+        <li id="team"><img src="./static/images/team3.jpg" /></li>
+        <li id="team"><img src="./static/images/team4.jpg" /></li>
       </ul>
-      <img src="./static/images/rules.jpg" id="rules-image" />
     </div>
+  </div>
 
-    <!-- 팀소개 -->
-    <div class="team-introduce">
-      <div>
-        <h1 class="team-introduce-title">우리 팀을 소개합니다 !</h1>
-        <ul class="teams" onclick="handleMemberProfileClick(event)">
-          <li id="team"><img src="./static/images/team1.jpg" /></li>
-          <li id="team"><img src="./static/images/team2.jpg" /></li>
-          <li id="team"><img src="./static/images/team3.jpg" /></li>
-          <li id="team"><img src="./static/images/team4.jpg" /></li>
-        </ul>
-      </div>
+  <!-- 방명록 -->
+  <div class="guest-book">방명록 예정</div>
+
+  <!-- 모달 -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modal-text"></p>
     </div>
+  </div>
+</body>
 
-    <!-- 방명록 -->
-    <div class="guest-book">방명록 예정</div>
-
-    <!-- 모달 -->
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p id="modal-text"></p>
-      </div>
-    </div>
-  </body>
 </html>
 
 <script>
@@ -81,20 +85,45 @@
     };
     const membersInfo = {
       team1: {
-        name: "뽀로로",
-        age: 10,
+        name: "",
+        mbti: "",
+        comment: "",
+        blog: "",
+        photo: "",
+        pro: "",
+        pstyle: "",
+        cstyle: ""
       },
       team2: {
-        name: "핑크",
-        age: 11,
+        name: "신승재",
+        mbti: "INFP",
+        comment: "잘 부탁드립니다..!",
+        blog: "durururuk.tistory.com",
+        photo: "https://images.chosun.com/resizer/PeHDAksF_KhyIrmk5Qm2vkWTCjU=/464x0/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/B4NDUDUIFKMU4RDHCV2WP2IOMM.jpg",
+        pro: "무엇을 검색해야 원하는 것을 찾을 수 있을지 구글링을 잘 한다고 생각합니다",
+        pstyle: "문제가 생겼을 때 잡히는대로 수정하지 않고 이유를 알고 해결하고싶습니다.",
+        cstyle: "제가 짠 코드를 누가 보더라도 코드를 이해할 수 있게 짜고싶습니다."
+
       },
       team3: {
-        name: "크롱",
-        age: 12,
+        name: "",
+        mbti: "",
+        comment: "",
+        blog: "",
+        photo: "",
+        pro: "",
+        pstyle: "",
+        cstyle: ""
       },
       team4: {
-        name: "새",
-        age: 13,
+        name: "",
+        mbti: "",
+        comment: "",
+        blog: "",
+        photo: "",
+        pro: "",
+        pstyle: "",
+        cstyle: ""
       },
     };
     const imgElement = e.target.closest("li").querySelector("img");
@@ -105,24 +134,49 @@
     const number = document.getElementById("number");
     const modal = document.getElementById("myModal");
     const modalText = document.getElementById("modal-text");
-    modalText.textContent = `Name: ${membersInfo[member].name}, Age: ${membersInfo[member].age}`;
+    // 모달 창 안으로 들어갈 html
+    modalText.innerHTML = `
+    <div class="innerModal">
+        <div class="top-content">
+            <div >
+                <img id=mphoto
+                    src=${membersInfo[member].photo}>
+            </div>
+
+            <div id=simpleProfile>
+                <p>이름 : ${membersInfo[member].name}</p>
+                <p>MBTI : ${membersInfo[member].mbti}</p>
+                <p>코멘트 : ${membersInfo[member].comment}</p>
+                <p>블로그 주소 : ${membersInfo[member].blog}</p>
+            </div>
+        </div>
+        <div id=detailedProfile>
+            <p>객관적으로 살펴본 자신의 장점 : ${membersInfo[member].pro} </p>
+            <p>자신의 스타일 : ${membersInfo[member].pstyle} </p>
+            <p>협업 스타일 소개 : ${membersInfo[member].cstyle} </p>
+
+        </div>
+    </div>
+
+    
+    `;
     modal.style.display = "block";
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-        const modal = document.getElementById("myModal");
-        const span = document.getElementsByClassName("close")[0];
+    const modal = document.getElementById("myModal");
+    const span = document.getElementsByClassName("close")[0];
 
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
 
-        window.onclick = function(event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
-      });
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  });
 </script>
 
 <style>
