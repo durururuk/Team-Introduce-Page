@@ -4,6 +4,7 @@
 }
 
 .header {
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   background-color: white;
@@ -27,6 +28,7 @@
 }
 
 .rules {
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   background-color: white;
@@ -72,7 +74,7 @@
 
 /* 팀규칙의 요소들 */
 
-#rule {
+.rule {
   margin-top: 5px;
 }
 
@@ -89,8 +91,8 @@
 
 /* team-introduce */
 .team-introduce {
+  border-radius: 8px;
   background-color: white;
-  position: relative;
   margin-top: 5%;
 }
 
@@ -99,7 +101,7 @@
   justify-content: space-between;
 }
 
-#team {
+.team {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -113,9 +115,10 @@
   cursor: pointer;
 }
 
-.team-introduce-title {
-  display: flex;
-  justify-content: center;
+#team-introduce-title {
+  margin :50px auto;
+  width:15%;
+  padding-top : 30px;
 }
 
 .guest-book {
@@ -143,6 +146,7 @@
 }
 
 .modal-content {
+  border-radius: 8px;
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -179,28 +183,92 @@
 .top-content {
   display: flex;
   justify-content: space-between;
-  margin-top : 20px;
+  margin-top: 10px;
+  padding-bottom : 30px;
 }
 
 #mphoto {
-  width: 50%;
+  max-width: 200px;
+  padding-right:20px;
+  
+
 
 }
 
 #simpleProfile {
-  width: 300px;
+  width: 200px;
   height: 200px;
+  padding-left:100px;
+
 }
 
 #detailedProfile {
   width: 440px;
   height: 200px;
-  margin : 35px auto;
+  margin-top : 30px
 }
+
+/* 방명록 */
+
+.guest-book{
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+#GBtitle{
+  display: flex;
+  justify-content: center;
+  padding : 20px auto;
+}
+/* 게시물 작성창 */
+.posting{
+  border-radius: 8px;
+  background-color: white;
+  padding : 10px 20px;
+  margin : 10px auto;
+  border : 1px solid black;
+  width: 350px;
+}
+
+#postingcontent {
+  width: 300px;
+  height: 100px;
+  text-align: left;
+  vertical-align: top;
+  resize: none;
+}
+
+#submit {
+  float : right;
+  margin-right : 40px;
+  margin-bottom : 10px;
+}
+
+/* 게시물 조회 */
+.post{
+  border-radius: 8px;
+  border: 1px solid black;
+  margin : 30px auto;
+  width: 500px;
+  height: auto;
+  padding :0px 30px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+
+
 /* font */
 body {
   font-family: "Dongle", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: x-large;
+  line-height: 100%;
 }
+
